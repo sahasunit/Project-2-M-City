@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 import mcityLogo from "../../Resources/images/logos/manchester_city_logo.png";
 import { getAuth, signOut } from "firebase/auth";
+import { requirePropFactory } from "@material-ui/core";
 
 export const CityLogo = (props) => {
 	const template = (
@@ -49,4 +50,28 @@ export const logOutHandler = () => {
 		.catch((error) => {
 			showErrorToast(error.message);
 		});
+};
+
+export const Tag = (props) => {
+	const template = (
+		<div
+			style={{
+				background: props.bck ? props.bck : "#ffffff",
+				fontSize: props.size ? props.size : "15px",
+				color: props.color ? props.color : "#000000",
+				padding: "5px 10px",
+				display: "inline-block",
+				fontFamily: "Righteous",
+				...props.add,
+			}}
+		>
+			{props.children}
+		</div>
+	);
+
+	if (props.link) {
+		return <Link to={props.linkTo}>{template}</Link>;
+	} else {
+		return template;
+	}
 };

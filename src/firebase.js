@@ -70,8 +70,8 @@ export const promotionsCollection = await getDocs(promotionsRef);
 const teamsRef = collection(DB, "teams");
 export const teamsCollection = await getDocs(teamsRef);
 
-teamsCollection.forEach((doc) => {
-	console.log(doc.data());
-});
+// teamsCollection.forEach((doc) => {
+// 	console.log(doc.data());
+// });
 
 export const auth = getAuth(app);

@@ -1,34 +1,3 @@
-// export const cityDb = {
-// 	matches: [
-// 		{
-// 			away: "Man.City",
-// 			awayThmb: "manchester_city",
-// 			date: "2018-05-22",
-// 			final: "No",
-// 			local: "Burnley",
-// 			localThmb: "burnley",
-// 			referee: "Marcus Red",
-// 			result: "n/a",
-// 			resultAway: "-",
-// 			resultLocal: "-",
-// 			stadium: "Senheiser Arena",
-// 		},
-// 		{
-// 			away: "Man.City",
-// 			awayThmb: "manchester_city",
-// 			date: "2019-05-28",
-// 			final: "Yes",
-// 			local: "Tottenham",
-// 			localThmb: "tottenham",
-// 			referee: "Marcus Red",
-// 			result: "D",
-// 			resultAway: "2",
-// 			resultLocal: "2",
-// 			stadium: "Star Wars Stadium",
-// 		},
-// 	],
-// };
-
 export const cityDb = {
 	matches: [
 		{
