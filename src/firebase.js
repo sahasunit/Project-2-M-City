@@ -64,7 +64,7 @@ export const playersCollection = await getDocs(playersRef);
 const positionsRef = collection(DB, "positions");
 export const positionsCollection = await getDocs(positionsRef);
 
-const promotionsRef = collection(DB, "promotions");
+export const promotionsRef = collection(DB, "promotions");
 export const promotionsCollection = await getDocs(promotionsRef);
 
 const teamsRef = collection(DB, "teams");

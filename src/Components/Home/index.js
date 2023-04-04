@@ -1,7 +1,8 @@
 import React from "react";
 import Featured from "./featured";
-import MatchesForm from "./matches/index";
-import MeetPlayers from "./meetPlayers/index";
+import MatchesForm from "./matches";
+import MeetPlayers from "./meetPlayers";
+import Promotion from "./promotion";
 
 const Home = () => {
 	return (
@@ -9,6 +10,7 @@ const Home = () => {
 			<Featured />
 			<MatchesForm />
 			<MeetPlayers />
+			<Promotion />
 		</div>
 	);
 };
