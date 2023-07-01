@@ -9,6 +9,7 @@ import {
 } from "firebase/firestore";
 import "firebase/firestore";
 import { cityDb } from "./temp/m-city-export";
+import { getStorage, ref } from "firebase/storage";
 
 const firebaseConfig = {
 	apiKey: "AIzaSyDqy7NAE6TJ7ev6nHslwvn7gshTxPsAQ1I",
@@ -22,7 +23,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const DB = getFirestore(app);
+export const DB = getFirestore(app);
+export const storage = getStorage(app);
 
 //----------------------------------------------------------------------------//
 //To populate firestore table, call the below function once,
@@ -58,7 +60,7 @@ const DB = getFirestore(app);
 const matchesRef = collection(DB, "matches");
 export const matchesCollection = await getDocs(matchesRef);
 
-const playersRef = collection(DB, "players");
+export const playersRef = collection(DB, "players");
 export const playersCollection = await getDocs(playersRef);
 
 const positionsRef = collection(DB, "positions");

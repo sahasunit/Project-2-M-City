@@ -22,7 +22,7 @@ const AdminNav = (props) => {
 			<ListItem
 				button
 				className="admin_nav_link"
-				onClick={navigate(link.titleTo)}
+				onClick={() => navigate(link.linkTo)}
 			>
 				{link.title}
 			</ListItem>
